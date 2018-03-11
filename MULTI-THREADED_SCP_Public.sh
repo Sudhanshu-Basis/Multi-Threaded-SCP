@@ -480,8 +480,6 @@ perform_secure_copy()
 		cat ${SCP_STATUS_PASTED_LOG}.html >> ${SCP_STATUS_PASTED_LOG_HEADER}.html
 		#Merge the HTML Log for Child SCP Process Return Code to the final log file
 		cat ${SCP_STATUS_PASTED_LOG_HEADER}.html >> ${LOG_LOC}multithreaded_scp_final_log.html
-
-		#mailx -s "SUCCESS::SCP Task Has Completed For File Pattern ${DIR_SOURCE}${FILE_PATTERN}" ${mailreceiver} < ${LOG_LOC}multithreaded_scp_final_log.html
 	   (
 	   echo "To: ${mailreceiver}"
 	   echo "MIME-Version: 1.0"
@@ -506,8 +504,6 @@ perform_secure_copy()
 
 		#Merge the HTML Log for Child SCP Process Return Code to the final log file
 		cat ${SCP_STATUS_PASTED_LOG_HEADER}.html >> ${LOG_LOC}multithreaded_scp_final_log.html
-
-		#mailx -s "FAILURE::SCP Task Has Issues For File Pattern ${DIR_SOURCE}${FILE_PATTERN}, Please Verify" ${mailreceiver} < ${LOG_LOC}multithreaded_scp_final_log.html
 	   	(
 		echo "To: ${mailreceiver}"
 		echo "MIME-Version: 1.0"
@@ -532,8 +528,6 @@ perform_secure_copy()
 
 		#Merge the HTML Log for Child SCP Process Return Code to the final log file
 		cat ${SCP_STATUS_PASTED_LOG_HEADER}.html >> ${LOG_LOC}multithreaded_scp_final_log.html
-
-		#mailx -s "FAILURE::SCP Task Has Issues For File Pattern ${DIR_SOURCE}${FILE_PATTERN}, Please Verify" ${mailreceiver} < ${LOG_LOC}multithreaded_scp_final_log.html
 	   	(
 		echo "To: ${mailreceiver}"
 		echo "MIME-Version: 1.0"
@@ -558,8 +552,6 @@ perform_secure_copy()
 
 		#Merge the HTML Log for Child SCP Process Return Code to the final log file
 		cat ${SCP_STATUS_PASTED_LOG_HEADER}.html >> ${LOG_LOC}multithreaded_scp_final_log.html
-
-		#mailx -s "FAILURE::SCP Task Has Issues For File Pattern ${DIR_SOURCE}${FILE_PATTERN}, Please Verify" ${mailreceiver} < ${LOG_LOC}multithreaded_scp_final_log.html
 	   	(
 		echo "To: ${mailreceiver}"
 		echo "MIME-Version: 1.0"
@@ -585,8 +577,6 @@ perform_secure_copy()
 
 		#Merge the HTML Log for Child SCP Process Return Code to the final log file
 		cat ${SCP_STATUS_PASTED_LOG_HEADER}.html >> ${LOG_LOC}multithreaded_scp_final_log.html
-
-		#mailx -s "FAILURE::SCP Task Has Issues For File Pattern ${DIR_SOURCE}${FILE_PATTERN}, Please Verify" ${mailreceiver} < ${LOG_LOC}multithreaded_scp_final_log.html
 	   	(
 		echo "To: ${mailreceiver}"
 		echo "MIME-Version: 1.0"
